@@ -6,27 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 <body>
-    
+    <div id="node-tree"></div>
 </body>
-<script>
-
-  function flatten(nestedList) {
-    let single = []
-
-    function fn(arr) {
-      for (var i = 0; i < arr.length; i++) {
-        if (arr[i] instanceof Array) {
-          fn(arr[i])
-        } else {
-          single.push(arr[i])
-        }
-      }
-    }
-    fn(nestedList)
-    console.log(single)
-    return single
-  }
-  flatten([1, [2, [3, [4, 5]]], 6])
-</script>
+<script src="test.js"></script>
+ 
 </html>
